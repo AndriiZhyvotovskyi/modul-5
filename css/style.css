@@ -1,0 +1,394 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  width: 1600px;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} 
+
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.navigation {
+  padding-top: 40px;
+}
+
+.logo {
+  float: left;
+}
+
+.logo a {
+  text-decoration: none;
+  color: rgb(85, 82, 82);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.logo:first-letter {
+  font-weight: 900;
+  color: rgb(26, 188, 156);
+}
+
+.menu {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  float: right;
+  margin: 0;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 32px;
+}
+
+.menu-item {
+  list-style: none;
+  float: left;
+  margin-right: 34px;
+}
+
+.menu-item:last-child {
+  margin: 0;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: rgb(15, 1, 1);
+}
+
+.menu-item a:hover {
+  color: rgb(26, 188, 156);
+}
+
+.products {
+  padding-top: 76px;
+}
+
+h3 {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(81, 81, 81);
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 118px;
+  padding: 90px 65px; 
+}
+
+h3::after {
+  content: '';
+  margin: 0 auto;
+  display: block;
+  width: 164px;
+  height: 8px;
+  background-color: rgb(26, 188, 156);
+}
+
+
+.slider {
+  width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative; 
+}
+
+.slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 1;
+}
+
+.slides-images {
+  position: relative;
+}
+
+.backgroung-overlay {
+  width: 1600px;
+  height: 600px;
+  display: inline-block;
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.slider-title { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-title {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);  
+}
+
+.slider-title h2 {  
+  font-size: 60px;
+  margin: 0;
+  text-transform: uppercase;
+  padding-bottom: 22px;
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.slider-title p {
+  font-size: 24px;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.style-button {
+  width: 104px;
+  height: 104px;
+  background-color: rgb(26, 188, 156);
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  opacity: 0.651;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.style-button:hover {
+  opacity: 1;
+}
+
+.ctrl-pre {
+  background-image: url(/img/icon-pre.png);
+  top: 50%;
+  left: 245px;
+  transform: translateY(-50%);
+}
+
+.ctrl-next {
+  background-image: url(/img/icon-next.png);
+  top: 50%;
+  right: 245px;
+  transform: translateY(-50%);
+}
+
+.slider:hover .orange-color{
+  color: rgb(255, 114, 0);
+}
+
+.collection {
+  background-color: rgb(233, 240, 253);
+}
+
+.collection-list {
+  padding: 0;
+  margin: 0;
+}
+
+.products-item {
+  list-style: none;
+  float: left;
+  margin-right: 30px;
+  position: relative;
+  transition: 0.4s;
+}
+
+.products-item img {
+  width: 255px;
+  height: 282px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.overlay {
+  width: 255px;
+  height: 282px;
+  display: inline-block;
+  background-color: rgb(0, 0, 0, 0.5);
+  border: 10px solid rgb(255, 255, 255, 0.5);
+  position: absolute;
+  background-clip: padding-box;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.4s;
+}
+.products-item:hover .overlay{
+  opacity: 1;
+}
+.product-nav-items {
+  list-style: none;
+  padding: 0;
+  width: 170px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-small {
+  float: left;
+}
+
+.nav-button {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: 1px solid rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-button:hover {
+  background-color: rgb(26, 188, 156);
+}
+
+.nav-button-big {
+  width: 170px;
+  height: 50px;
+  background: rgb(50, 50, 50);
+  border: 1px solid rgb(255, 255, 255);
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-position: 12px, 12px;
+  cursor: pointer;
+}
+
+.button-big a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 40px;
+}
+
+.button-small:not(:nth-child(3)) {
+  margin-right: 10px;
+}
+.favorite {
+  background-image: url(/img/icon-hurt.png);
+}
+.sorting {
+  background-image: url(/img/icon-sorting.png);
+}
+.reserve {
+  background-image: url(/img/icon-time.png);
+}
+.order {
+  background-image: url(/img/icon-added.png);
+}
+
+.products-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.products-item:nth-child(-n + 4) {
+  margin-bottom: 100px;
+}
+
+.name {
+  float: left;
+}
+
+.price {
+  float: right;
+}
+
+.products-name {
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  background-color: rgb(50, 50, 50);
+  cursor: pointer;
+}
+
+.products-name p {
+  margin: 0;
+  padding: 12px;
+}
+
+.products-name h4 {
+  margin: 0;
+  padding: 12px;
+  font-size: 18px;
+}
+
+.name a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.price {
+  background-color: rgba(255, 255, 255, 0.4)
+}
+
+.products-item:hover .products-name {
+  background-color: rgb(26, 188, 156);
+}
+
+footer {
+  text-align: center;
+  background: rgb(50, 50, 50);
+  padding: 36px 36px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+footer p {  
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(26, 188, 156);
+}
+
+
