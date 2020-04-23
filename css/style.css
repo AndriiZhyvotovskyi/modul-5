@@ -200,14 +200,14 @@ h3::after {
 }
 
 .ctrl-pre {
-  background-image: url(/img/icon-pre.png);
+  background-image: url(../img/icon-pre.png);
   top: 50%;
   left: 245px;
   transform: translateY(-50%);
 }
 
 .ctrl-next {
-  background-image: url(/img/icon-next.png);
+  background-image: url(../img/icon-next.png);
   top: 50%;
   right: 245px;
   transform: translateY(-50%);
@@ -311,16 +311,16 @@ h3::after {
   margin-right: 10px;
 }
 .favorite {
-  background-image: url(/img/icon-hurt.png);
+  background-image: url(../img/icon-hurt.png);
 }
 .sorting {
-  background-image: url(/img/icon-sorting.png);
+  background-image: url(../img/icon-sorting.png);
 }
 .reserve {
-  background-image: url(/img/icon-time.png);
+  background-image: url(../img/icon-time.png);
 }
 .order {
-  background-image: url(/img/icon-added.png);
+  background-image: url(../img/icon-added.png);
 }
 
 .products-item:nth-child(4n) {
