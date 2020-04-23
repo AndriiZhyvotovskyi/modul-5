@@ -297,10 +297,9 @@ h3::after {
   cursor: pointer;
 }
 
-.button-big a {
+.button-text {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  
   color: rgb(255, 255, 255);
   text-decoration: none;
   text-transform: uppercase;
